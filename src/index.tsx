@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { ThemeProvider } from 'styled-components'
 import App from './pages/home'
-import './styles/global.css'
+import './assets/styles/global.css'
 
 const theme = {
   background: '#f5f8fb',

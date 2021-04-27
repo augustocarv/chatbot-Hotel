@@ -4,7 +4,7 @@ class Hotel {
   public Rooms = HotelRooms
 
   getFreeRoom() {
-    return this.Rooms.filter((room) => room.busy)
+    return this.Rooms.filter((room) => !room.busy)
   }
   formatedFreeRooms() {
     const freeRoms = this.getFreeRoom()
