@@ -4,6 +4,7 @@ import { Steps } from '../interfaces/steps.interface'
 import { StyledImage, StyledContentFull } from '../../../styles/styles'
 import TableRoom from '../components/tableRoom'
 
+
 export const reserva: Steps[] = [
   {
     id: 'reserva-1',
