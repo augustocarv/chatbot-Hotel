@@ -20,7 +20,6 @@ class Hotel {
   reserve(roomNumber: number) {
     const getRoom = hotelService.getByRoom(roomNumber)
     const getOthersRooms = hotelService.Rooms.filter((room) => room.room !== roomNumber)
-    console.log(this.Rooms)
     if (getRoom) {
       getRoom['busy'] = true
       const newHotelState = [...getOthersRooms, getRoom]
