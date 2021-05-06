@@ -7,12 +7,12 @@ class Hotel {
     return this.Rooms.filter((room) => !room.busy)
   }
   formatedFreeRooms() {
-    const freeRoms = this.getFreeRoom()
-    return freeRoms.map((room, index) => ({
+    const freeRoms = this.getFreeRoom().map((room) => ({
       value: room.room,
       label: `${room.room}`,
       trigger: 'reserva-3'
     }))
+    return [...freeRoms, { value: 0, label: 'Sair', trigger: 'welcome' }]
   }
   getByRoom(roomNumber: number) {
     return this.Rooms.find((room) => room.room === roomNumber)

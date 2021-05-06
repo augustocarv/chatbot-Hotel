@@ -9,7 +9,18 @@ const Home: React.FC = () => {
   const onSetHotel = (value: Room[]) => setHotel(value)
 
   const onEndChat = (props: any) => {
-    const selectedRoom = props.values[1]
+    if (4 > props.values.length) {
+      return false
+    }
+    let selectedRoom: number
+    const numberRoms: number[] = []
+
+    props.values.forEach((value: any) => {
+      if (!isNaN(value)) {
+        numberRoms.push(value)
+      }
+    })
+    selectedRoom = numberRoms[numberRoms.length - 1]
     const hotel = hotelService.reserve(selectedRoom)
     if (!hotel) {
       return false

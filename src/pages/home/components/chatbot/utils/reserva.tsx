@@ -29,8 +29,8 @@ export const reserva: Steps[] = [
   {
     id: 'reserva-5',
     options: [
-      { value: true, label: 'Sim', trigger: 'reserva-6' },
-      { value: false, label: 'Não', trigger: 'reserva-1' }
+      { value: 'true', label: 'Sim', trigger: 'reserva-6' },
+      { value: 'false', label: 'Não', trigger: 'reserva-1' }
     ]
   },
   {
@@ -51,8 +51,8 @@ export const reserva: Steps[] = [
   {
     id: 'reserva-8',
     options: [
-      { value: true, label: 'Sim', trigger: 'reserva-9' },
-      { value: false, label: 'Não', trigger: 'reserva-1' }
+      { value: 'true', label: 'Sim', trigger: 'reserva-9' },
+      { value: 'false', label: 'Não', trigger: 'reserva-1' }
     ]
   },
   {
