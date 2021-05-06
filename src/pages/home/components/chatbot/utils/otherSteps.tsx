@@ -3,8 +3,29 @@ import { Steps } from '../interfaces/steps.interface'
 
 export const welcome: Steps = {
   id: 'welcome',
-  message: 'Olá, eu sou o Zeca! Com o que posso lhe ajudar ?',
+  message: 'Com o que posso lhe ajudar ?',
   trigger: 'options'
+}
+
+export const welcomeNameBot: Steps = {
+  id: 'welcomeName1',
+  message: 'Olá, eu sou o Zeca! Qual o seu nome ?',
+  trigger: 'welcomeName2'
+}
+export const welcomeNameUser: Steps = {
+  id: 'welcomeName2',
+  user: true,
+  trigger: 'welcomeCell1'
+}
+export const welcomeCellBot: Steps = {
+  id: 'welcomeCell1',
+  message: 'Qual o seu telefone ?',
+  trigger: 'welcomeCell2'
+}
+export const welcomeCellUser: Steps = {
+  id: 'welcomeCell2',
+  user: true,
+  trigger: 'welcome'
 }
 
 export const options: Steps = {
@@ -44,4 +65,3 @@ export const aboutUs: Steps = {
     'Um dos mais procurados em Torres! Localizado a 600 m do centro de Torres, o Hotel Guarita oferece WiFi gratuito, restaurante e serviço de recepção 24 horas. A Praia Grande fica a 800 m, enquanto a Praia da Guarita está a 3 km de distância. Há disponibilidade de WiFi gratuito. Venha se hospedar com a gente!',
   trigger: 'seeMore'
 }
-

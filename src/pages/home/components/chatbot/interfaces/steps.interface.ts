@@ -9,6 +9,7 @@ export type Steps = {
   message?: any
   trigger?: string
   end?: boolean
+  user?: boolean
   options?: Options[]
   asMessage?: boolean
   component?: any
