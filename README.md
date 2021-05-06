@@ -1,7 +1,5 @@
 ## Aplicação feita para a disciplina de IA - 2021/01
 
-<br>
-
 #### Os chatbots são robôs que imitam uma conversa humana. Sua principal função é automatizar o atendimento, o nosso foi desenvolvido para reserva em hotéis.
 
 ---
