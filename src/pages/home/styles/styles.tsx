@@ -32,6 +32,7 @@ export const StyledCardSituation: StyledComponent<'div', any, {}, never> = style
   justify-content: space-around;
   overflow-y: auto;
   width: 20%;
+  box-shadow: 0 12px 24px 0 rgb(0 0 0 / 15%);
 `
 export const StyledSituation: StyledComponent<'div', any, {}, never> = styled.div`
   display: flex;
