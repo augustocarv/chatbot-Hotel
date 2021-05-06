@@ -2,11 +2,11 @@
 
 <br>
 
-### Os chatbots são robôs que imitam uma conversa humana. Sua principal função é automatizar o atendimento, o nosso foi desenvolvido para reserva em hotéis.
+#### Os chatbots são robôs que imitam uma conversa humana. Sua principal função é automatizar o atendimento, o nosso foi desenvolvido para reserva em hotéis.
 
 ---
 
-## Libs Usadas:
+### Libs Usadas:
 
 <br>
 
@@ -18,22 +18,19 @@ react-simple-chatbot
 
 ---
 
-## Colaboradores:
+### Colaboradores:
 
-<br>
 
-### Luiz Augusto Barros de Carvalho
+#### Luiz Augusto Barros de Carvalho
 
-### Gustavo Sebastião Scheffer
+#### Gustavo Sebastião Scheffer
 
-### Victor Thales Pereira de Limas
+#### Victor Thales Pereira de Limas
 
 ---
 
-## Observações:
+### Observações:
 
-<br>
 
 Nomes, informações e imagens são meramente ilustrativas e apenas para fins acadêmicos
 
-<br>
