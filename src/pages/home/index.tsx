@@ -2,10 +2,9 @@ import React, { useState } from 'react'
 import { hotelService } from '../../services/hotel'
 import { Room } from '../../utils/hotel/interface/hotel.interface'
 import Chatbot from './components/chatbot'
-import { Container, Content } from './components/wrappers/wrapper'
+import { Container, Content, ChatBotWrapper, CardSituation, Situation } from './components/wrappers/wrapper'
 
 const Home: React.FC = () => {
-  const [endChatbot, setEndChatBot] = useState<boolean>(true)
   const [hotel, setHotel] = useState<Room[]>(hotelService.Rooms)
   const onSetHotel = (value: Room[]) => setHotel(value)
 
@@ -15,25 +14,22 @@ const Home: React.FC = () => {
     if (!hotel) {
       return false
     }
-    return onSetHotel(hotel)
+    return onSetHotel(hotel.sort((a, b) => a.room - b.room))
   }
   return (
     <Container>
       <Content>
-        <button style={{ display: 'flex' }} onClick={() => setEndChatBot(!endChatbot)}>
-          Abrir ChatBot
-        </button>
-        <div style={{ display: 'flex' }}>
-          <div style={{ backgroundColor: 'white' }}>
+        <ChatBotWrapper>
+          <CardSituation>
             {hotel.map((room) => (
-              <div>
+              <Situation>
                 <div>Quartos: {room.room}</div>
                 <div>Situação: {room.busy ? 'Ocupado' : 'Livre'}</div>
-              </div>
+              </Situation>
             ))}
-          </div>
-          {endChatbot && <Chatbot onEndChat={onEndChat} />}
-        </div>
+          </CardSituation>
+          <Chatbot onEndChat={onEndChat} />
+        </ChatBotWrapper>
       </Content>
     </Container>
   )
